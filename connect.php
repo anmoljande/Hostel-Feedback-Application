@@ -1,5 +1,10 @@
 <?php
-echo'SUCESS';
+//echo'SUCESS';
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 		
+    } 
+$mysql_host='localhost';
 $mysql_host='localhost';
 $mysql_user='root';
 $mysql_password='anmol2739bjande';

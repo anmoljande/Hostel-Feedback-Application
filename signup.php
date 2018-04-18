@@ -2,7 +2,6 @@
 
 include 'head.php';
 include 'connect.php';
-
 echo'<h3><u>SIGN UP</u></h3>'.'<br>';
 if($_SERVER['REQUEST_METHOD']!='POST')
 {
@@ -85,9 +84,10 @@ else
 		}
 		else
 		{
-			echo'<h1>'."SIGNED UP SUCESSFULLY".'</h1>';
+			echo'<h1 style="color:red;text-align:center;">'."SIGNED UP SUCESSFULLY".'</h1>';
+		echo'<h3 style="color:green;text-align:center;">'."LOGIN HERE AND START POSTING<a href='signin.php'>~LOGIN~</a>";
 		}
-		
+		//ALTER TABLE tablename AUTO_INCREMENT = 1 for starting user_id from 1 
 	}
 	
 	

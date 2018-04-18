@@ -1,70 +1,65 @@
+body {
+   
+    text-align: center;
+}
+.background-image {
+ background-image:url(partner5.jpg);
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(2.5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index:-1;
+}
 
-body{
-	background-image:url("back2.png");
-	width:100%;
-	background-repeat:no-repeat;	
-	margin:0;
-	text-align:center;
-	background-size:cover;
+ 
+#wrapper {
+    width: 900px;
+    margin: 0 auto;             /* center the page */
 }
-     h2 {
-       color:white;
-       font-family: courier;
-	   font-size:30px;
-	   
-	   
-     }
-#wrapper
-{
-	width:100%;
-	margin:0 auto;
-	//border:5px solid red;
+ 
+#content {
+    background-color: #fff;
+    border: 1px solid #000;
+    float: left;
+    font-family: Arial;
+    padding: 20px 30px;
+    text-align: left;
+    width: 100%;                /* fill up the entire div */
 }
-#content
-{
-	background-color:white;
-	//opacity:0.9;
-	//border:3px solid green;
-	float:left;
-	font-family: Arial;
-   padding:0px;
-    text-align:left;
+ 
+#menu {
+    float: left;
+	
+    border: 1px solid #000;
+    border-bottom: none;        /* avoid a double border */
+    clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
     width:100%;
-	
-height:350px;	
-	
+    height:40px;
+    padding: 0 30px;
+    background-color: #FFF;
+    text-align: left;
+    font-size: 85%;
 }
-#menu
-{
-	float:left;
-	
-	clear: both; 	
-	width:100%;
-	height:30px;
-	border-bottom:5px solid black;
-	background-color:purple;
-	text-align:center;
-	font-size:90%;
-	padding:15px;
-	
+ 
+#menu a:hover {
+    background-color: #009FC1;
 }
-#menu a:hover
-{
-	padding:10px;
-	color:black;
-	
-background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
-	//background-image:url(back2.png);
-}
-#footer {
-    clear: both;
-}
-#userbar
-{
+ 
+#userbar {
     background-color: #fff;
     float: right;
     width: 250px;
 }
+ 
+#footer {
+    clear: both;
+}
+ 
+/* begin table styles */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -77,8 +72,6 @@ table a {
 table a:hover {
     color:#373737;
     text-decoration: none;
-	
-	border-radius:55px;
 }
  
 th {
@@ -89,15 +82,27 @@ th {
 td {
     padding: 5px;
 }
+ 
+/* Begin font styles */
 h1, #footer {
-	
     font-family: Arial;
-    //color:red;
-	color: #F1F3F1;
+    color: #F1F3F1;
 }
  
 h3 {margin: 0; padding: 0;}
-
+ 
+/* Menu styles */
+.item {
+    background-color: #00728B;
+    border: 1px solid #032472;
+    color: #FFF;
+	font-size:20px;
+    font-family: Arial;
+	text-align:justify;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+ 
 .leftpart {
     width: 70%;
 }
@@ -111,8 +116,7 @@ h3 {margin: 0; padding: 0;}
     color: #373737;
 }
 #footer {
-    font-size: 30px;
-	color:red;
+    font-size: 65%;
     padding: 3px 0 0 0;
 }
  
@@ -128,16 +132,4 @@ h3 {margin: 0; padding: 0;}
 textarea {
     width: 500px;
     height: 200px;
-}
-.item{
-    color:white;
-
-	border:2px solid white;
-	border-radius:25px;
-   padding:5px;
-    color: #FFF;
-    font-family: Arial;
-    margin-top:0px;
-	font-size:25px;
-    text-decoration:none;
 }

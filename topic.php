@@ -69,18 +69,17 @@ include 'connect.php';
 					
 							while($row = mysqli_fetch_assoc($result) )
 							{   						
-								echo'<table border=2>
-								<tr>
-								<td>
+								echo'<table border=2  style="table-layout:fixed;">
+								<tr >
+								<td style="">
 								Post by:<br>
 								'.$row["user_name"].'
 								<br>
 								<br>
-								'.$row["post_date"].'
-								
+								'.$row["post_date"].'								
 								</td>
 								<td>'.$row["post_content"].'</td>
-								</td>
+								
 								</tr><br>';	
 								
 					 

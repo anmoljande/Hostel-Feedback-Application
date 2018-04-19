@@ -20,9 +20,8 @@ else
 	else
 	{
 		echo'<table border="1">
-		<tr>
-		<th>Category</th>
-		<th>Last topic</th>
+		<tr style="text-align:center;">
+		<th >Category</th>
 		</tr>';
 		  while($row = mysqli_fetch_assoc($result))
         {               
@@ -31,10 +30,7 @@ else
 					$var=$row['cat_id'];
                     echo '<h3><a href="category.php?id='.$var.'">'. $row['cat_name'] . '</a></h3>' . $row['cat_description'];
                 echo '</td>';
-                echo '<td class="rightpart">';
-                            echo '<a href="topic.php?id=">Topic subject</a> at 10-10';
-                echo '</td>';
-            echo '</tr>';
+                           echo '</tr>';
         }
 			
 			

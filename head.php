@@ -6,19 +6,21 @@ include'connect.php';
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>FORUM</title>
 	
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
+<div class="html-mobile-background"></div>
 <div class="background-image"></div>
 <h2>Hostel Feedback Discussion Forum</h2>
 	<div id="wrapper">
 	<div id="menu">
  <a class="item" href="/ip/index.php">Home</a> --
-        <a class="item" href="/ip/creatingtopic.php">Create a topic</a> --
-        <a class="item" href="/ip/creatingcat.php">Create a category</a>
+        <a class="item" href="creatingtopic.php">Create a topic</a> --
+        <a class="item" href="creatingcat.php">Create a category</a>
 <div id="userbar">
         <?php	
 		
